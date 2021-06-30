@@ -7,3 +7,4 @@ Over the last decade, deep neural networks have achieved impressive success in v
 In unsupervised domain adaptation setting, we have labeled data from source domain and unlabeled data from target domain. Our aim is to adapt the model trained on source data to use it on target data with minimized performance drop. 
 
 The motivation 
+ 

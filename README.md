@@ -8,5 +8,8 @@ Over the last decade, deep neural networks have achieved impressive success in v
 
 In unsupervised domain adaptation setting, we have labeled data from source domain and unlabeled data from target domain. Our aim is to adapt the model trained on source data to use it on target data with minimized performance drop. 
 
- 
- 
+### UDA for Semantic Segmentation
+To train a network for semantic segmentation, we need plenty of data and it is a demanding task to obtain this amount of data and label it. Hence, synthetic data can be used to train the network and we can use this network for segmentation of real images. However, this will lead to performance drop and we need to perform domain adaptation to mitigate this issue. The paper proposes a new method for this task.
+
+### Notation
+In this section, I will introduce the notation defined in paper and use it thorughout this article. D^{s}

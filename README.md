@@ -12,6 +12,7 @@ In unsupervised domain adaptation setting, we have labeled data from source doma
 To train a network for semantic segmentation, we need plenty of data and it is a demanding task to obtain this amount of data and label it. Hence, synthetic data can be used to train the network and we can use this network for segmentation of real images. However, this will lead to performance drop and we need to perform domain adaptation to mitigate this issue. The paper proposes a new method for this task.
 
 ### Notation
-In this section, I will introduce the notation defined in paper and use it thorughout this article. <img width="100" alt="Ekran Resmi 2021-06-30 23 54 05" src="https://user-images.githubusercontent.com/56236171/124036639-9afb1980-d9fe-11eb-911a-b9a117892a5d.png">
+In this section, I will introduce the notation defined in paper and use it thorughout this article.
+<img width="120" alt="Ekran Resmi 2021-06-30 23 54 05" src="https://user-images.githubusercontent.com/56236171/124036639-9afb1980-d9fe-11eb-911a-b9a117892a5d.png"> represents source domain dataset
 
 

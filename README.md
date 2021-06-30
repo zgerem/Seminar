@@ -13,6 +13,6 @@ To train a network for semantic segmentation, we need plenty of data and it is a
 
 ### Notation
 In this section, I will introduce the notation defined in paper and use it thorughout this article.
-<img width="120" alt="Ekran Resmi 2021-06-30 23 54 05" src="https://user-images.githubusercontent.com/56236171/124036639-9afb1980-d9fe-11eb-911a-b9a117892a5d.png"> represents source domain dataset
+<img width="150" alt="Ekran Resmi 2021-06-30 23 54 05" src="https://user-images.githubusercontent.com/56236171/124036639-9afb1980-d9fe-11eb-911a-b9a117892a5d.png"> represents source domain dataset
 
 

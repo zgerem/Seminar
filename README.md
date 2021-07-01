@@ -40,5 +40,5 @@ This transform has an amplitude and a phase part. After taking the transform, it
 <div align="center">
   <img width="350" alt="Ekran Resmi 2021-07-01 11 11 38" src="https://user-images.githubusercontent.com/56236171/124098779-2905ed00-da5d-11eb-83ae-7c95aeae6563.png">
 </div> 
-In the mask, \beta defines the are to be replaced. This is the only parameter used in transfer part and it takes values between 0 and 1. 
+In the mask, β defines the are to be replaced. This is the only parameter used in transfer part and it takes values between 0 and 1. 
 They define a mask with parameter beta. This parameter determines the size 	of the part to be replaced. In the end, taking the inverse Fourier transform gives them target stylized source image. The image will have the same semantic map with the original source image but its appearance will be similar to target images.

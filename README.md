@@ -40,7 +40,7 @@ This transform has an amplitude and a phase part. After taking the transform, it
 <div align="center">
   <img width="350" alt="Ekran Resmi 2021-07-01 11 11 38" src="https://user-images.githubusercontent.com/56236171/124098779-2905ed00-da5d-11eb-83ae-7c95aeae6563.png">
 </div> 
-In the mask, β defines the are to be replaced. This is the only parameter used in transfer part and it takes values between 0 and 1. The central part is accepted as (0, 0) and H refers to height while W refers to width of the image. This definition of mask makes choice of β independent of the size of the image. In the end, taking inverse Fourier Transform gives the source image transferred to target domain. Overall process with randomly sampled source image and target image can be expressed with the followig formula:  
+In the mask, β defines the are to be replaced. This is the only parameter used in transfer part and it takes values between 0 and 1. The central part is accepted as (0, 0) and H refers to height while W refers to width of the image. This definition of mask makes choice of β independent of the size of the image. In the end, taking inverse Fourier Transform gives the source image transferred to target domain. Overall process with randomly sampled source image <img width="48" alt="Ekran Resmi 2021-07-01 00 46 42" src="https://user-images.githubusercontent.com/56236171/124105479-87ce6500-da63-11eb-8bc9-6ed9293b2a18.png"> and target image can be expressed with the followig formula:  
 <div align="center">
  <img width="500" alt="Ekran Resmi 2021-07-01 11 54 43" src="https://user-images.githubusercontent.com/56236171/124105091-29a18200-da63-11eb-8a78-c335bc76fc82.png">
  </div>

@@ -24,12 +24,14 @@ As real-world dataset, CityScapes[3] is chosen. 2,975 images from this dataset i
 ## Related Work
 
 ## Method and Main contributions
+In this section, I will explain the method proposed in the paper in detail and point its main contributions.
 ### Spectral Transfer
 In the paper, a spectral tansfer block is proposed. The reason behind implementation of the such a transfer is that variation of low-level spectrum does not affect high level semantics. However, neural networks learn these statistics together with useful features about semantics. To eliminate this, the structure in the figure follows a certain path.  
-<img width="800" alt="Ekran Resmi 2021-07-01 10 26 43" src="https://user-images.githubusercontent.com/56236171/124092236-ec36f780-da56-11eb-8e7f-94f2be11402b.png"> 
+<div align="center"> <img width="800" alt="Ekran Resmi 2021-07-01 10 26 43" src="https://user-images.githubusercontent.com/56236171/124092236-ec36f780-da56-11eb-8e7f-94f2be11402b.png"> </div>  
  <div align="center">
   Style transfer block proposed in paper
-</div> 
+</div>  
+
 The first step is taking Fourier transform of randomly sampled target image and source image with the following formula: 
 <div align="center">
   <img width="400" alt="Ekran Resmi 2021-07-01 10 19 31" src="https://user-images.githubusercontent.com/56236171/124091231-e2f95b00-da55-11eb-9dec-8a14f050de6a.png">

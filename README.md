@@ -117,4 +117,10 @@ To show the robustness of the method, they trained two segmentation networks <im
 
 ### Results
 #### FDA with Single Scale
-The first experiment is FDA with single scale on task GTA5 to CityScapes. They train three DeepLabV2 network with these <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> values and given scaling factor for entropy minimization and eta for penalty function. You can see the intersection over union scores for 19 classes in the table. T=0 represents that the model is trained from scratch. For different beta values, performance of the network is very similar which shows robustness of the method with respect to different beta values. Also we can see that best performing entries equally distribute among three networks. 
+The first experiment is FDA with single scale on task GTA5 to CityScapes. They train 3 DeepLabV2 networks with the following parameters:  
+- <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> = 0.01, 0.05, 0.09
+- <img width="80" alt="Ekran Resmi 2021-07-01 21 42 47" src="https://user-images.githubusercontent.com/56236171/124181061-567e8500-dab5-11eb-8c0a-cd4abb88ef78.png"> = 0.005
+
+
+- 
+- values and given scaling factor for entropy minimization and eta for penalty function. You can see the intersection over union scores for 19 classes in the table. T=0 represents that the model is trained from scratch. For different beta values, performance of the network is very similar which shows robustness of the method with respect to different beta values. Also we can see that best performing entries equally distribute among three networks. 

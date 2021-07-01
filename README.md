@@ -145,6 +145,6 @@ Without SST, performing only MBT makes a bigger contribution than this. As in th
 The last experiment includes SST. Overall training process starts with training of 3 networks with different <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> values from scratch (Single scale FDA). Then, averaging over the predictions of these networks (MBT) gives the pseudo labels for SST. Using these labels, SST is performed one round.  
 In the end of second round, they perform MBT again to get pseudo labels for the next round. In the last round, these labels are used in the networks and the last result is obtained with MBT. Following table includes the results for overall training process.
 <div align="center">
-<img width="909" alt="Ekran Resmi 2021-07-02 01 36 39" src="https://user-images.githubusercontent.com/56236171/124201042-3cee3500-dad7-11eb-9bdc-59408c50db06.png">
+<img width="850" alt="Ekran Resmi 2021-07-02 01 36 39" src="https://user-images.githubusercontent.com/56236171/124201042-3cee3500-dad7-11eb-9bdc-59408c50db06.png">
 
 </div>

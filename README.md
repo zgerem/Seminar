@@ -45,5 +45,5 @@ In the mask, β defines the are to be replaced. This is the only parameter used 
  <img width="500" alt="Ekran Resmi 2021-07-01 11 54 43" src="https://user-images.githubusercontent.com/56236171/124105091-29a18200-da63-11eb-8a78-c335bc76fc82.png">
  </div>
 
-is an RGB image and <img width="110" alt="Ekran Resmi 2021-07-01 11 40 01" src="https://user-images.githubusercontent.com/56236171/124105812-e4ca1b00-da63-11eb-8232-022c35e629cf.png">
+Overall process with randomly sampled source image <img width="110" alt="Ekran Resmi 2021-07-01 11 40 01" src="https://user-images.githubusercontent.com/56236171/124105812-e4ca1b00-da63-11eb-8232-022c35e629cf.png">
 is the corresponding ground truth semantic map. 

@@ -148,3 +148,6 @@ In the end of second round, they perform MBT again to get pseudo labels for the 
 <img width="850" alt="Ekran Resmi 2021-07-02 01 36 39" src="https://user-images.githubusercontent.com/56236171/124201042-3cee3500-dad7-11eb-9bdc-59408c50db06.png">
 
 </div>
+<div align="center">
+Results of overall process
+</div>

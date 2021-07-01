@@ -38,7 +38,7 @@ The first thing it does is taking Fourier transform of randomly sampled target i
 </div> 
 This transform has an amplitude and a phase part. After taking the transform, it replaces low frequency part of the amplitude of the source image with the same part of the amplitude of target image. For this process, following mask should be used:  
 <div align="center">
-  <img width="350" alt="Ekran Resmi 2021-07-01 11 11 38" src="https://user-images.githubusercontent.com/56236171/124098779-2905ed00-da5d-11eb-83ae-7c95aeae6563.png">
+  <img width="420" alt="Ekran Resmi 2021-07-01 11 11 38" src="https://user-images.githubusercontent.com/56236171/124098779-2905ed00-da5d-11eb-83ae-7c95aeae6563.png">
 </div> 
 
 

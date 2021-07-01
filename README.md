@@ -124,4 +124,6 @@ The first experiment is FDA with single scale on task GTA5 to CityScapes. They t
 <div align="center">
   <img width="856" alt="Ekran Resmi 2021-07-01 21 51 31" src="https://user-images.githubusercontent.com/56236171/124181967-88441b80-dab6-11eb-8644-b907ae45e20a.png">
 </div>
-We can see the intersection over union (IoU) scores for 19 classes in the table. T=0 represents that the model is trained from scratch. For different<img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png">values, performance of the network is very similar and that shows robustness of the method with respect to this parameter. In addition, we can see that the best performing entries equally distribute among three networks. 
+
+
+We can see the intersection over union (IoU) scores for 19 classes in the table. T=0 represents that the model is trained from scratch. For different <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> values, performance of the network is very similar and that shows robustness of the method with respect to this parameter. In addition, we can see that the best performing entries equally distribute among three networks. 

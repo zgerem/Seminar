@@ -68,7 +68,7 @@ The only parameter to be chosen in the spectral transfer part is β. From the ma
 After spectral transfer part, training process starts. Since the spectral transfer did not change the semantics and they have ground truth labels for source data, they compute cross entropy loss on <img width="45" alt="Ekran Resmi 2021-07-01 12 22 48" src="https://user-images.githubusercontent.com/56236171/124134215-e6efa200-da82-11eb-9c35-9300c5fdfd25.png"> for training on source data.  
 
 <div align="center">
-  <img width="200" alt="Ekran Resmi 2021-06-01 18 51 38" src="https://user-images.githubusercontent.com/56236171/124134826-83b23f80-da83-11eb-9af3-852c00eb7ac6.png">
+  <img width="300" alt="Ekran Resmi 2021-06-01 18 51 38" src="https://user-images.githubusercontent.com/56236171/124134826-83b23f80-da83-11eb-9af3-852c00eb7ac6.png">
 
 </div>   
 <div align="center">

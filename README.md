@@ -32,7 +32,7 @@ In the paper, a spectral tansfer block is proposed. The reason behind implementa
   Style transfer block proposed in paper
 </div>  
 
-The first step is taking Fourier transform of randomly sampled target image and source image with the following formula: 
+The first thing the block does is taking Fourier transform of randomly sampled target image and source image with the following formula: 
 <div align="center">
   <img width="400" alt="Ekran Resmi 2021-07-01 10 19 31" src="https://user-images.githubusercontent.com/56236171/124091231-e2f95b00-da55-11eb-9dec-8a14f050de6a.png">
 </div> 

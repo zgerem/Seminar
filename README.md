@@ -95,7 +95,7 @@ To boost the performance of the method, they also do self-supervised learning an
 <div align="center">
   <img width="200" alt="Ekran Resmi 2021-06-11 13 44 14" src="https://user-images.githubusercontent.com/56236171/124173392-4497e480-daab-11eb-809b-af2af38e230c.png">
 </div>
-They call this averaging over predictions of different models process as Multi-band Transfer (MBT). After getting pseudo labels, they add cross entropy loss on target images to the overall loss function and train the network. 
+They call this averaging over predictions of different models process as Multi-band Transfer (MBT). After getting pseudo labels, they add cross entropy loss on target images to the overall loss function and train the network.  
 <div align="center">
  <img width="400" alt="Ekran Resmi 2021-06-11 13 45 21" src="https://user-images.githubusercontent.com/56236171/124174049-28487780-daac-11eb-83d9-f5dfc88c6a80.png">
 </div>

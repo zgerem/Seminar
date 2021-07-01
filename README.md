@@ -114,3 +114,7 @@ In the paper, the authors work on two different domain adaptation scenarios.
 - SYNTHIA to CityScapes: For this scenario, evaluations are done over both 13 and 16 classes.
 
 To show the robustness of the method, they trained two segmentation networks <img width="20" alt="Ekran Resmi 2021-07-01 16 30 48" src="https://user-images.githubusercontent.com/56236171/124141559-cbd46080-da89-11eb-8b69-093971dbef2a.png"> separately. The first one is DeepLabv2 with ResNet101 backbone and other one is FCN-8s with VGG16  backbone. Both of these networks are initialized with pertained weights on ImageNet dataset.
+
+### Results
+#### FDA with Single Scale
+The first experiment is FDA with single scale on task GTA5 to CityScapes. They train three DeepLabV2 network with these <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> values and given scaling factor for entropy minimization and eta for penalty function. You can see the intersection over union scores for 19 classes in the table. T=0 represents that the model is trained from scratch. For different beta values, performance of the network is very similar which shows robustness of the method with respect to different beta values. Also we can see that best performing entries equally distribute among three networks. 

@@ -38,3 +38,4 @@ The first step is taking Fourier transform of randomly sampled target image and 
 - The transform has an amplitude and a phase part as can be seen . After taking the transform, it replaces low frequency part of the amplitude of the source image with that of the target image. They define a mask with parameter beta. This parameter determines the size 	of the part to be replaced. In the end, taking the inverse Fourier transform gives them target stylized source image. The image will have the same semantic map with the original source image but its appearance will be similar to target images.
 
 
+ 

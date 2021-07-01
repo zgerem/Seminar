@@ -68,10 +68,10 @@ The only parameter to be chosen in the spectral transfer part is β. From the ma
 After spectral transfer part, training process starts. Since the spectral transfer did not change the semantics and they have ground truth labels for source data, they compute cross entropy loss on <img width="45" alt="Ekran Resmi 2021-07-01 12 22 48" src="https://user-images.githubusercontent.com/56236171/124134215-e6efa200-da82-11eb-9c35-9300c5fdfd25.png"> for training on source data.  
 
 <div align="center">
-  <img width="100" alt="Ekran Resmi 2021-06-01 18 51 38" src="https://user-images.githubusercontent.com/56236171/124134826-83b23f80-da83-11eb-9af3-852c00eb7ac6.png">
+  <img width="200" alt="Ekran Resmi 2021-06-01 18 51 38" src="https://user-images.githubusercontent.com/56236171/124134826-83b23f80-da83-11eb-9af3-852c00eb7ac6.png">
 
 </div>   
 <div align="center">
-  Translated images for different β values
+  Cross entropy on translated images
 </div>  
 After the domain alignment, they think the problem as a semi supervised learning problem and they use entropy minimization on target data during training. In this equation p(ro) represents Charbonnier penalty function which penalizes high entropy predictions more than low entropy predictions for eta greater than 0.5. After scaling this loss function and summing it with cross entropy loss, they train the network from scratch for semantic segmentation.

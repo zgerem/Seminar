@@ -61,4 +61,6 @@ The only parameter to be chosen in the spectral transfer part is β. From the ma
 </div> 
 <div align="center">
   Translated images for different β values
-</div> 
+</div>  
+After spectral transfer part, training process starts.
+### Semi-Supervised Training

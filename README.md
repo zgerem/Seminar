@@ -54,5 +54,10 @@ In the mask, β defines the area to be replaced. This is the only parameter used
 <img width="40" alt="Ekran Resmi 2021-07-01 12 22 48" src="https://user-images.githubusercontent.com/56236171/124109121-1abcce80-da67-11eb-997d-4dd3566f57fe.png"> will have the same semantic map as <img width="20" alt="Ekran Resmi 2021-07-01 12 20 16" src="https://user-images.githubusercontent.com/56236171/124108794-c580bd00-da66-11eb-9abe-2793b93f6fb7.png"> but its appearance will be similar to that of target images.
 
 #### Choice of β
-The only parameter to be chosen in the spectral transfer part is β. From the mask definition, we know that as β approaches to 0, <img width="40" alt="Ekran Resmi 2021-07-01 12 22 48" src="https://user-images.githubusercontent.com/56236171/124109121-1abcce80-da67-11eb-997d-4dd3566f57fe.png"> will be more similar to <img width="20" alt="Ekran Resmi 2021-07-01 12 20 16" src="https://user-images.githubusercontent.com/56236171/124108794-c580bd00-da66-11eb-9abe-2793b93f6fb7.png"> and as β approaches to 1, <img width="40" alt="Ekran Resmi 2021-07-01 12 22 48" src="https://user-images.githubusercontent.com/56236171/124109121-1abcce80-da67-11eb-997d-4dd3566f57fe.png"> will approach to target image. 
-However, this also brings significant artifacts to the image as you can see. In the paper, the effect of different choices of β is visualized. 
+The only parameter to be chosen in the spectral transfer part is β. From the mask definition, we know that as β approaches to 0, <img width="40" alt="Ekran Resmi 2021-07-01 12 22 48" src="https://user-images.githubusercontent.com/56236171/124109121-1abcce80-da67-11eb-997d-4dd3566f57fe.png"> will be more similar to <img width="20" alt="Ekran Resmi 2021-07-01 12 20 16" src="https://user-images.githubusercontent.com/56236171/124108794-c580bd00-da66-11eb-9abe-2793b93f6fb7.png"> and as β approaches to 1, <img width="40" alt="Ekran Resmi 2021-07-01 12 22 48" src="https://user-images.githubusercontent.com/56236171/124109121-1abcce80-da67-11eb-997d-4dd3566f57fe.png"> will approach to target image. However, this also brings significant artifacts to the output image. In the paper, the effect of different choices of β is visualized as in the figure. 
+<div align="center">
+  <img width="984" alt="Ekran Resmi 2021-07-01 12 40 27" src="https://user-images.githubusercontent.com/56236171/124111490-a2a3d800-da69-11eb-9286-43ba2043bffb.png">
+</div> 
+<div align="center">
+  Translated images for different β values
+</div> 

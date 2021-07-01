@@ -119,7 +119,7 @@ To show the robustness of the method, they trained two segmentation networks <im
 #### FDA with Single Scale
 The first experiment is FDA with single scale on task GTA5 to CityScapes. They train 3 DeepLabV2 networks with the following parameters:  
 - <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> = 0.01, 0.05, 0.09
-- <img width="80" alt="Ekran Resmi 2021-07-01 21 42 47" src="https://user-images.githubusercontent.com/56236171/124181061-567e8500-dab5-11eb-8c0a-cd4abb88ef78.png"> = 0.005
+- <img width="30" alt="Ekran Resmi 2021-07-01 21 42 47" src="https://user-images.githubusercontent.com/56236171/124181061-567e8500-dab5-11eb-8c0a-cd4abb88ef78.png"> = 0.005
 
 
 - 

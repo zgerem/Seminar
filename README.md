@@ -89,3 +89,4 @@ After scaling this loss function and summing it with cross entropy loss, they tr
 <div align="center">
   <img width="400" alt="Ekran Resmi 2021-06-01 20 40 51" src="https://user-images.githubusercontent.com/56236171/124141066-5bc5da80-da89-11eb-92e7-a2caf343a532.png">
 </div> 
+### Self Supervised Training

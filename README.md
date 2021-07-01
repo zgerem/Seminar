@@ -100,3 +100,4 @@ They call this averaging over predictions of different models process as Multi-b
  <img width="400" alt="Ekran Resmi 2021-06-11 13 45 21" src="https://user-images.githubusercontent.com/56236171/124174049-28487780-daac-11eb-83d9-f5dfc88c6a80.png">
 </div>
 The whole training process of segmentation network consists of initial training of M models from scratch, and two more rounds of self-supervised training.
+

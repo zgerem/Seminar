@@ -24,6 +24,7 @@ As real-world dataset, CityScapes[3] is chosen. 2,975 images from this dataset i
 ## Method and Main contributions
 ### Spectral Transfer
 In the paper, a spectral tansfer block is proposed. The reason behind implementation of the such a transfer is that variation of low-level spectrum does not affect high level semantics. However, neural networks learn these statistics together with useful features about semantics. To eliminate this, spectral transfer block applies the following steps:
-- The first step is taking Fourier transform of randomly sampled target image and source image. You can see the formula here. The transform has an amplitude and a phase part. After taking the transform, they replace low frequency part of the amplitude of the source image with that of the target image. They define a mask with parameter beta. This parameter determines the size 	of the part to be replaced. In the end, taking the inverse Fourier transform gives them target stylized source image. The image will have the same semantic map with the original source image but its appearance will be similar to target images.
+- Taking Fourier transform of randomly sampled target image and source image with the formula:
+- The transform has an amplitude and a phase part. After taking the transform, they replace low frequency part of the amplitude of the source image with that of the target image. They define a mask with parameter beta. This parameter determines the size 	of the part to be replaced. In the end, taking the inverse Fourier transform gives them target stylized source image. The image will have the same semantic map with the original source image but its appearance will be similar to target images.
 
 

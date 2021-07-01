@@ -104,4 +104,13 @@ The whole training process of segmentation network consists of initial training 
 ### Main Contributions
 - Simplicity of domain alignment: Other state-of-the-art methods train a network for image translation. In the proposed method, it is enough to pick a proper beta value for domain alignment.
 - Training a single network: After domain alignment, proposed method only requires training a network, as in a simple semantic segmentation task.
-- Computationally less demanding: In FDA paper, there is no discriminators or adversarial training and this makes the method computationally less demanding.
+- Computationally less demanding: In FDA paper, there is no computationally demanding implementation such as discriminators or adversarial training. 
+
+## Experimental Setup
+### Experiments
+
+In the paper, the authors work on two different domain adaptation scenarios.
+- GTA5 to CityScapes: These two datasets have 19 classes in common.
+- SYNTHIA to CityScapes: For this scenario, evaluations are done over both 13 and 16 classes.
+
+To show the robustness of the method, they trained two segmentation networks <img width="20" alt="Ekran Resmi 2021-07-01 16 30 48" src="https://user-images.githubusercontent.com/56236171/124141559-cbd46080-da89-11eb-8b69-093971dbef2a.png"> separately. first one is DeepLabv2 with ResNet101 backbone and other one is FCN-8s with VGG16  backbone. And they initialize these models with pertained weights on ImageNet dataset.

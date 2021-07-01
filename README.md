@@ -91,7 +91,8 @@ After scaling this loss function and summing it with cross entropy loss, they tr
 </div>
 
 ### Self Supervised Training
-To boost the performance of the method, they also do self-supervised learning and they need pseudo labels for this task. They obtain these pseudo labels from the models trained with different <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> values. They pass target images through these models and take the mean prediction as in the equation and behave these labels as ground truth. 
+To boost the performance of the method, they also do self-supervised learning and they need pseudo labels for this task. 
+They obtain these pseudo labels from the models trained with different <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> values. They pass target images through these models and take the mean prediction as in the equation and behave these labels as ground truth. 
 <div align="center">
   <img width="200" alt="Ekran Resmi 2021-06-11 13 44 14" src="https://user-images.githubusercontent.com/56236171/124173392-4497e480-daab-11eb-809b-af2af38e230c.png">
 </div>
@@ -132,4 +133,10 @@ We can see the intersection over union (IoU) scores for 19 classes in the table.
 These results also show that without entropy minimization, <img width="30" alt="Ekran Resmi 2021-07-01 21 42 47" src="https://user-images.githubusercontent.com/56236171/124181061-567e8500-dab5-11eb-8c0a-cd4abb88ef78.png"> = 0 and <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> = 0.09, FDA outperforms one of the state-of-the-art methods, CycADA. This shows strength of FDA method compared to two-stage image translation based adversarial domain adaptation.
 #### Multi-band Transfer (MBT)
 The next experiment is for Multi-band Transfer. When they use the predictions of the network with <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> is 0.09, the improvement is only 0.9% compared to the training from scratch scenario as given in the table.
-<img width="400" alt="Ekran Resmi 2021-07-02 01 21 36" src="https://user-images.githubusercontent.com/56236171/124199736-e501ff00-dad3-11eb-9bf4-3579a6ddc478.png">
+<div align="center">
+ <img width="500" alt="Ekran Resmi 2021-07-02 01 21 36" src="https://user-images.githubusercontent.com/56236171/124199736-e501ff00-dad3-11eb-9bf4-3579a6ddc478.png">
+</div>
+<div align="center">
+ Results for SST and MBT
+</div>
+Without SST, performing only MBT makes a bigger contribution than this. As in the table, the improvement becomes 3.9%. This observation lead the authors to perform MBT before SST.

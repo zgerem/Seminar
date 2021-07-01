@@ -134,7 +134,7 @@ These results also show that without entropy minimization, <img width="30" alt="
 #### Multi-band Transfer (MBT)
 The next experiment is for Multi-band Transfer. When they use the predictions of the network with <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> is 0.09, the improvement is only 0.9% compared to the training from scratch scenario as given in the table.
 <div align="center">
- <img width="700" alt="Ekran Resmi 2021-07-02 01 21 36" src="https://user-images.githubusercontent.com/56236171/124199736-e501ff00-dad3-11eb-9bf4-3579a6ddc478.png">
+ <img width="900" alt="Ekran Resmi 2021-07-02 01 21 36" src="https://user-images.githubusercontent.com/56236171/124199736-e501ff00-dad3-11eb-9bf4-3579a6ddc478.png">
 </div>
 <div align="center">
  Results for SST and MBT

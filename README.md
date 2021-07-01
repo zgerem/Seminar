@@ -77,7 +77,7 @@ After the domain alignment, they think the situation as a semi supervised learni
 </div>
 
 
-In this equation <img width="150" alt="Ekran Resmi 2021-07-01 16 15 11" src="https://user-images.githubusercontent.com/56236171/124139099-93338780-da87-11eb-9d33-0db98a65f46c.png"> represents Charbonnier penalty function which penalizes high entropy predictions more than low entropy predictions for <img width="10" alt="Ekran Resmi 2021-07-01 16 22 35" src="https://user-images.githubusercontent.com/56236171/124140248-9aa76080-da88-11eb-88d2-4733f83a6931.png"> > 0.5. For the setting in the paper, this parameter is chosen as 2, which corresponds to the red curve in the figure.
+In this equation <img width="150" alt="Ekran Resmi 2021-07-01 16 15 11" src="https://user-images.githubusercontent.com/56236171/124139099-93338780-da87-11eb-9d33-0db98a65f46c.png"> represents Charbonnier penalty function which penalizes high entropy predictions more than low entropy predictions for <img width="13" alt="Ekran Resmi 2021-07-01 16 22 35" src="https://user-images.githubusercontent.com/56236171/124140248-9aa76080-da88-11eb-88d2-4733f83a6931.png"> > 0.5. For the setting in the paper, this parameter is chosen as 2, which corresponds to the red curve in the figure.
 <div align="center">
   <img width="251" alt="Ekran Resmi 2021-06-01 20 45 55" src="https://user-images.githubusercontent.com/56236171/124139989-6764d180-da88-11eb-87ca-d59ea52aecef.png">
 </div>
@@ -120,5 +120,5 @@ To show the robustness of the method, they trained two segmentation networks <im
 The first experiment is FDA with single scale on task GTA5 to CityScapes. They train 3 DeepLabV2 networks with the following parameters:  
 - <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> = 0.01, 0.05, 0.09
 - <img width="30" alt="Ekran Resmi 2021-07-01 21 42 47" src="https://user-images.githubusercontent.com/56236171/124181061-567e8500-dab5-11eb-8c0a-cd4abb88ef78.png"> = 0.005
-- 
+- <img width="13" alt="Ekran Resmi 2021-07-01 16 22 35" src="https://user-images.githubusercontent.com/56236171/124140248-9aa76080-da88-11eb-88d2-4733f83a6931.png"> = 2.0
 - values and given scaling factor for entropy minimization and eta for penalty function. You can see the intersection over union scores for 19 classes in the table. T=0 represents that the model is trained from scratch. For different beta values, performance of the network is very similar which shows robustness of the method with respect to different beta values. Also we can see that best performing entries equally distribute among three networks. 

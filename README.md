@@ -91,4 +91,4 @@ After scaling this loss function and summing it with cross entropy loss, they tr
 </div>
 
 ### Self Supervised Training
-knk
+To boost the performance of SSL, they also perform 

@@ -65,6 +65,6 @@ The only parameter to be chosen in the spectral transfer part is β. From the ma
  
 
 ### Semi-Supervised Training
-After spectral transfer part, training process starts. Since the spectral transfer did not change the semantics and they have ground truth labels for source data, they compute cross entropy loss on <img width="40" alt="Ekran Resmi 2021-07-01 12 09 46" src="https://user-images.githubusercontent.com/56236171/124133708-63ce4c00-da82-11eb-8fc2-a5b14be6afd4.png"> for training on source data. 
+After spectral transfer part, training process starts. Since the spectral transfer did not change the semantics and they have ground truth labels for source data, they compute cross entropy loss on <img width="50" alt="Ekran Resmi 2021-07-01 12 09 46" src="https://user-images.githubusercontent.com/56236171/124133708-63ce4c00-da82-11eb-8fc2-a5b14be6afd4.png"> for training on source data. 
 
 After the domain alignment, they think the problem as a semi supervised learning problem and they use entropy minimization on target data during training. In this equation p(ro) represents Charbonnier penalty function which penalizes high entropy predictions more than low entropy predictions for eta greater than 0.5. After scaling this loss function and summing it with cross entropy loss, they train the network from scratch for semantic segmentation.

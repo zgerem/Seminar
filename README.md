@@ -30,9 +30,10 @@ In the paper, a spectral tansfer block is proposed. The reason behind implementa
  <div align="center">
   Style transfer block proposed in paper
 </div> 
-
-- Taking Fourier transform of randomly sampled target image and source image with the formula:  
-- <img width="500" alt="Ekran Resmi 2021-07-01 10 19 31" src="https://user-images.githubusercontent.com/56236171/124091231-e2f95b00-da55-11eb-9dec-8a14f050de6a.png">
+The first step is taking Fourier transform of randomly sampled target image and source image with the following formula: 
+<div align="center">
+  <img width="500" alt="Ekran Resmi 2021-07-01 10 19 31" src="https://user-images.githubusercontent.com/56236171/124091231-e2f95b00-da55-11eb-9dec-8a14f050de6a.png">
+</div> 
 
 - The transform has an amplitude and a phase part as can be seen . After taking the transform, it replaces low frequency part of the amplitude of the source image with that of the target image. They define a mask with parameter beta. This parameter determines the size 	of the part to be replaced. In the end, taking the inverse Fourier transform gives them target stylized source image. The image will have the same semantic map with the original source image but its appearance will be similar to target images.
 

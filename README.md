@@ -101,3 +101,7 @@ They call this averaging over predictions of different models process as Multi-b
 </div>
 The whole training process of segmentation network consists of initial training of M models from scratch, and two more rounds of self-supervised training.
 
+### Main Contributions
+- Simplicity of domain alignment: Other state-of-the-art methods train a network for image translation. In the proposed method, it is enough to pick a proper beta value for domain alignment.
+- Training a single network: After domain alignment, proposed method only requires training a network, as in a simple semantic segmentation task.
+- Computationally less demanding: In FDA paper, there is no discriminators or adversarial training and this makes the method computationally less demanding.

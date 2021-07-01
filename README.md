@@ -77,12 +77,12 @@ After the domain alignment, they think the situation as a semi supervised learni
 </div>
 
 
-In this equation <img width="150" alt="Ekran Resmi 2021-07-01 16 15 11" src="https://user-images.githubusercontent.com/56236171/124139099-93338780-da87-11eb-9d33-0db98a65f46c.png"> represents Charbonnier penalty function which penalizes high entropy predictions more than low entropy predictions for <img width="10" alt="Ekran Resmi 2021-07-01 16 22 35" src="https://user-images.githubusercontent.com/56236171/124140248-9aa76080-da88-11eb-88d2-4733f83a6931.png"> > 0.5. For the setting ,n the paper, this parameter is chosen as 2, which corresponds to the red curve in the figure.
+In this equation <img width="150" alt="Ekran Resmi 2021-07-01 16 15 11" src="https://user-images.githubusercontent.com/56236171/124139099-93338780-da87-11eb-9d33-0db98a65f46c.png"> represents Charbonnier penalty function which penalizes high entropy predictions more than low entropy predictions for <img width="10" alt="Ekran Resmi 2021-07-01 16 22 35" src="https://user-images.githubusercontent.com/56236171/124140248-9aa76080-da88-11eb-88d2-4733f83a6931.png"> > 0.5. For the setting in the paper, this parameter is chosen as 2, which corresponds to the red curve in the figure.
 <div align="center">
   <img width="251" alt="Ekran Resmi 2021-06-01 20 45 55" src="https://user-images.githubusercontent.com/56236171/124139989-6764d180-da88-11eb-87ca-d59ea52aecef.png">
 </div>
 <div align="center">
   Curves of Charbonnier function for different η values
 </div> 
-Curves for different <img width="20" alt="Ekran Resmi 2021-07-01 16 22 35" src="https://user-images.githubusercontent.com/56236171/124140248-9aa76080-da88-11eb-88d2-4733f83a6931.png"> values can be seen.
+
 After scaling this loss function and summing it with cross entropy loss, they train the network from scratch for semantic segmentation.

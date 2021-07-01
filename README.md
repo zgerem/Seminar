@@ -88,6 +88,7 @@ In this equation <img width="150" alt="Ekran Resmi 2021-07-01 16 15 11" src="htt
 After scaling this loss function and summing it with cross entropy loss, they train the network <img width="20" alt="Ekran Resmi 2021-07-01 16 30 48" src="https://user-images.githubusercontent.com/56236171/124141559-cbd46080-da89-11eb-8b69-093971dbef2a.png"> from scratch for semantic segmentation using the following formula:
 <div align="center">
   <img width="400" alt="Ekran Resmi 2021-06-01 20 40 51" src="https://user-images.githubusercontent.com/56236171/124141066-5bc5da80-da89-11eb-92e7-a2caf343a532.png">
-</div> 
+</div>
+
 ### Self Supervised Training
 knk

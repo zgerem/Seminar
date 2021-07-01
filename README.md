@@ -50,5 +50,8 @@ In the mask, β defines the area to be replaced. This is the only parameter used
   <img width="420" alt="Ekran Resmi 2021-07-01 11 54 43" src="https://user-images.githubusercontent.com/56236171/124106592-a123e100-da64-11eb-9d94-a8c307aa6bd6.png">
 
 </div>  
+
+
+
 <img width="45" alt="Ekran Resmi 2021-07-01 12 09 46" src="https://user-images.githubusercontent.com/56236171/124107164-40e16f00-da65-11eb-9b15-97de2500c23c.png"> will have the same semantic map as <img width="27" alt="Ekran Resmi 2021-07-01 12 16 46" src="https://user-images.githubusercontent.com/56236171/124108165-41c6d080-da66-11eb-8c07-9332793826b1.png">
 

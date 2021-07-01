@@ -82,7 +82,7 @@ In this equation <img width="150" alt="Ekran Resmi 2021-07-01 16 15 11" src="htt
   <img width="251" alt="Ekran Resmi 2021-06-01 20 45 55" src="https://user-images.githubusercontent.com/56236171/124139989-6764d180-da88-11eb-87ca-d59ea52aecef.png">
 </div>
 <div align="center">
-  Curves of Charbonnier function for different η values
+  Curves of Charbonnier function for different <img width="10" alt="Ekran Resmi 2021-07-01 16 22 35" src="https://user-images.githubusercontent.com/56236171/124140248-9aa76080-da88-11eb-88d2-4733f83a6931.png"> values
 </div> 
 
 After scaling this loss function and summing it with cross entropy loss, they train the network from scratch for semantic segmentation.

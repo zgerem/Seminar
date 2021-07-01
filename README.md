@@ -18,9 +18,7 @@ In this section, I will introduce the notation defined in paper and use it thoru
 ### Datasets
 In the paper, two different synthetic datasets are used as source domain data separately. GTA5[1] has 24,966 annotated images with spatial resolution 1914×1052 originally, which resized to 1280×720 and randomly cropped to the 1024×512 in training process. The second synthetic dataset is SYNTHIA[2], its SYNTHIA-RAND-CITYSCAPES subset is used in paper which consists of 9,400 annotated images with size 1280×760. The images are randomly cropped to 1024×512 for training. 
 As real-world dataset, CityScapes[3] is chosen. 2,975 images from this dataset is used as target domain data and 500 validation images are used for testing. These images are resized to 1024×512. 
- <div align="center">
-  my text here.
-</div>
+
 
 
 ## Related Work
@@ -32,7 +30,7 @@ In the paper, a spectral tansfer block is proposed. The reason behind implementa
 <center>Centered text</center>  
 
 - Taking Fourier transform of randomly sampled target image and source image with the formula:  
-- <img width="619" alt="Ekran Resmi 2021-07-01 10 19 31" src="https://user-images.githubusercontent.com/56236171/124091231-e2f95b00-da55-11eb-9dec-8a14f050de6a.png">
+- <img width="500" alt="Ekran Resmi 2021-07-01 10 19 31" src="https://user-images.githubusercontent.com/56236171/124091231-e2f95b00-da55-11eb-9dec-8a14f050de6a.png">
 
 - The transform has an amplitude and a phase part as can be seen . After taking the transform, it replaces low frequency part of the amplitude of the source image with that of the target image. They define a mask with parameter beta. This parameter determines the size 	of the part to be replaced. In the end, taking the inverse Fourier transform gives them target stylized source image. The image will have the same semantic map with the original source image but its appearance will be similar to target images.
 

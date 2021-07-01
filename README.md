@@ -77,4 +77,4 @@ After the domain alignment, they think the situation as a semi supervised learni
 </div>
 
 
-In this equation<img width="150" alt="Ekran Resmi 2021-07-01 16 10 34" src="https://user-images.githubusercontent.com/56236171/124138557-0d174100-da87-11eb-8cb2-05259a60cd12.png">represents Charbonnier penalty function which penalizes high entropy predictions more than low entropy predictions for eta greater than 0.5. After scaling this loss function and summing it with cross entropy loss, they train the network from scratch for semantic segmentation.
+In this equation <img width="150" alt="Ekran Resmi 2021-07-01 16 13 46" src="https://user-images.githubusercontent.com/56236171/124138897-641d1600-da87-11eb-87a8-d672e735c9ed.png"> represents Charbonnier penalty function which penalizes high entropy predictions more than low entropy predictions for eta greater than 0.5. After scaling this loss function and summing it with cross entropy loss, they train the network from scratch for semantic segmentation.

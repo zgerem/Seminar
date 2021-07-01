@@ -87,5 +87,5 @@ In this equation <img width="150" alt="Ekran Resmi 2021-07-01 16 15 11" src="htt
 
 After scaling this loss function and summing it with cross entropy loss, they train the network from scratch for semantic segmentation using the following formula:
 <div align="center">
-  <img width="655" alt="Ekran Resmi 2021-06-01 20 40 51" src="https://user-images.githubusercontent.com/56236171/124141066-5bc5da80-da89-11eb-92e7-a2caf343a532.png">
+  <img width="400" alt="Ekran Resmi 2021-06-01 20 40 51" src="https://user-images.githubusercontent.com/56236171/124141066-5bc5da80-da89-11eb-92e7-a2caf343a532.png">
 </div> 

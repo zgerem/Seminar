@@ -174,7 +174,7 @@ GTA5 -> CityScapes benchmark
 
 Following table shows quantitative evaluation on the second scenario, SYNTHIA to CityScapes. This time, FDA is evaluated for 13 classes for ResNet101 and 16 classes for VGG16. For this scenario FDA outperforms the other methods as in the other scenario.
 <div align="center">
-<img width="909" alt="Ekran Resmi 2021-07-02 02 50 41" src="https://user-images.githubusercontent.com/56236171/124204910-58117280-dae0-11eb-9bd9-cb403173dab7.png">
+<img width="800" alt="Ekran Resmi 2021-07-02 02 50 41" src="https://user-images.githubusercontent.com/56236171/124204910-58117280-dae0-11eb-9bd9-cb403173dab7.png">
 
 </div>
 <div align="center">

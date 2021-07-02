@@ -30,6 +30,9 @@ One of the state of the art methods in the field is CyCADA, which uses cycle con
 <div align="center">
   <img width="600" alt="Ekran Resmi 2021-07-02 03 29 58" src="https://user-images.githubusercontent.com/56236171/124207450-d886a200-dae5-11eb-8eb7-c6122ed869ec.png">
 </div> 
+<div align="center">
+ Cycle-consistent adversarial adaptation of pixel-space inputs
+</div> 
 
 ### Bidirectional Learning for Domain Adaptation of Semantic Segmentation[6]
 BDL is the other state-of-the-art method which is in the field of UDA. In the method, there are two separated networks. The first one is image-to-image translation model and the second one is segmentation adaptation model. The networks are trained in both ways.  

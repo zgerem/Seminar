@@ -82,7 +82,7 @@ The only parameter to be chosen in the spectral transfer part is <img width="14"
   <img width="860" alt="Ekran Resmi 2021-07-01 12 40 27" src="https://user-images.githubusercontent.com/56236171/124111490-a2a3d800-da69-11eb-9286-43ba2043bffb.png">
 </div> 
 <div align="center">
-  Translated images for different β values
+  Translated images for different <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> values
 </div>  
  
 

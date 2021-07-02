@@ -215,7 +215,8 @@ Comparison of predictions
 ## Conclusion
 FDA paper proposes a new method for domain alignment which does not require any training. This method showed impressive results just by training a semantic segmentation network with the translated images such that it outperformed CycADA, one of the state-of-the-art methods. Another advantage of the proposed spectral transfer block is that it can be employed by upcoming works in unsupervised domain adaptation field. 
 In addition to that, they used SST effectively by employing MBT. Otherwise, SST would be self-referential and improvement would not be significant. With their simple method, they outperform all the other state-of-the-art methods. This study shows that some misalignments due to low-level statistics can be captured by Fourier transform.  
-Presentation slides can be found here:[ZeynepGerem_FDA.pdf](/uploads/a191124cec02d7c01062bf4b6675aeb4/ZeynepGerem_FDA.pdf)
+Presentation slides can be found here:[ZeynepGerem_FDA.pdf](https://github.com/zgerem/Seminar/files/6754792/ZeynepGerem_FDA.pdf)
+
 
 ## References
 [1] Gabriel J Brostow, Julien Fauqueur, and Roberto Cipolla. Semantic object classes in video: A high-definition ground truth database. Pattern Recognition Letters, 2009.  

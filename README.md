@@ -114,7 +114,7 @@ After scaling this loss function and summing it with cross entropy loss, they tr
 
 ### Self Supervised Training (SST)
 To boost the performance of the method, they also do self-supervised learning and they need pseudo labels for this task. Using predictions of a model as pseudo labels in the next training with SST is self-referential and results in insignificant contribution.  
-As a solution, they obtain pseudo labels from the models trained with different <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> values. They pass target images through these models and take the mean prediction as in the equation and behave these labels as ground truth. 
+As a solution, they obtain pseudo labels from the models trained with different <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> values. They pass target images through these models and take the mean prediction as in the equation and treat these labels as ground truth. 
 <div align="center">
   <img width="240" alt="Ekran Resmi 2021-06-11 13 44 14" src="https://user-images.githubusercontent.com/56236171/124173392-4497e480-daab-11eb-809b-af2af38e230c.png">
 </div>

@@ -107,7 +107,7 @@ The whole training process of segmentation network consists of initial training 
 - Training a single network: After domain alignment, proposed method only requires training a network, as in a simple semantic segmentation task.
 - Computationally less demanding: In FDA paper, there is no computationally demanding implementation such as discriminators or adversarial training. 
 
-## Experimental Setup
+## Experimental Setup and Results
 ### Experiments
 
 In the paper, the authors work on two different domain adaptation scenarios.
@@ -186,3 +186,9 @@ In the paper the authors compare their results with BDL which is the second best
 <div align="center">
 <img width="750" alt="Ekran Resmi 2021-07-02 02 59 30" src="https://user-images.githubusercontent.com/56236171/124205457-8cd1f980-dae1-11eb-80e7-d7c946d89b84.png">
 </div>
+<div align="center">
+Comparison of predictions
+</div>
+
+## Conclusion
+

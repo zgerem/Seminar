@@ -19,7 +19,7 @@ In this section, I will introduce the notation defined in the paper and use it t
  represents source domain dataset, where <img width="120" alt="Ekran Resmi 2021-07-01 00 30 47" src="https://user-images.githubusercontent.com/56236171/124039644-a270f180-da03-11eb-9ff2-40930a537e5c.png"> is an RGB image and <img width="100" alt="Ekran Resmi 2021-07-01 00 32 41" src="https://user-images.githubusercontent.com/56236171/124039775-e237d900-da03-11eb-9761-3731839ab240.png"> is the corresponding ground truth semantic map. Similarly, <img width="90" alt="Ekran Resmi 2021-07-01 00 43 20" src="https://user-images.githubusercontent.com/56236171/124040543-62ab0980-da05-11eb-8dff-2b8fdbc2a2f4.png"> represents target domain dataset, where <img width="120" alt="Ekran Resmi 2021-07-01 00 30 47" src="https://user-images.githubusercontent.com/56236171/124040986-4e1b4100-da06-11eb-88b0-9036b3c54118.png"> is an image and we do not have ground truth maps for this set. 
 
 ### Datasets
-In the paper, two different synthetic datasets are used as source domain data separately. GTA5[3] has 24,966 annotated images with spatial resolution 1914×1052 originally, which resized to 1280×720 and randomly cropped to the 1024×512 in training process. The second synthetic dataset is SYNTHIA[4], its SYNTHIA-RAND-CITYSCAPES subset is used in paper which consists of 9,400 annotated images with size 1280×760. The images are randomly cropped to 1024×512 for training. 
+In the paper, two different synthetic datasets are used as source domain data in two scenarios. GTA5[3] has 24,966 annotated images with spatial resolution 1914×1052 originally, which resized to 1280×720 and randomly cropped to the 1024×512 in training process. The second synthetic dataset is SYNTHIA[4], its SYNTHIA-RAND-CITYSCAPES subset is used in paper which consists of 9,400 annotated images with size 1280×760. The images are randomly cropped to 1024×512 for training. 
 As real-world dataset, CityScapes[2] is chosen. 2,975 images from this dataset is used as target domain data and 500 validation images are used for testing. These images are resized to 1024×512. 
 
 
@@ -37,7 +37,7 @@ One of the state of the art methods in the field is CyCADA, which uses cycle con
 ### Bidirectional Learning for Domain Adaptation of Semantic Segmentation[6]
 BDL is the other state-of-the-art method which is in the field of UDA. In the method, there are two separated networks. The first one is image-to-image translation model and the second one is segmentation adaptation model. The networks are trained in both ways.  
 In forward direction, the first network is trained with source and target data and translated images are obtained, which have the same semantic maps as the original source images. The second network will be trained with them in addition to target images and ground truth labels of source domain data.  
-In backward direction, the motivation is to promote translation model using updated segmentation model. They aim to improve quality of translated images.
+In backward direction, the motivation is to promote translation model using updated segmentation model. Authors of the paper aim to improve quality of translated images in this direction.
  <div align="center">
   <img width="900" alt="Ekran Resmi 2021-06-04 12 14 07" src="https://user-images.githubusercontent.com/56236171/124207607-269ba580-dae6-11eb-8b74-747f213dc3e2.png">
 
@@ -47,7 +47,7 @@ In backward direction, the motivation is to promote translation model using upda
 </div>   
 
 ## Method and Main contributions
-In this section, I will explain the method proposed in the paper in detail and point its main contributions.
+In this section, I will explain the method proposed in the paper in detail and point out its main contributions.
 ### Spectral Transfer
 In the paper, a spectral transfer block is proposed. The reason behind implementation of such a transfer is that variation of low-level spectrum does not affect high level semantics. However, neural networks learn these statistics together with useful features about semantics. To eliminate this, the structure in the figure follows a certain path.  
 <div align="center"> <img width="650" alt="Ekran Resmi 2021-07-01 10 26 43" src="https://user-images.githubusercontent.com/56236171/124092236-ec36f780-da56-11eb-8e7f-94f2be11402b.png"> </div>  

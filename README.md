@@ -15,7 +15,7 @@ To train a network for semantic segmentation, we need plenty of data. High quali
 
 ### Notation
 In this section, I will introduce the notation defined in paper and use it thorughout this article.  
-<img width="180" alt="Ekran Resmi 2021-07-02 13 08 50" src="https://user-images.githubusercontent.com/56236171/124266314-19f36d80-db37-11eb-9dba-1ff73f830aa9.png">
+<img width="200" alt="Ekran Resmi 2021-07-02 13 08 50" src="https://user-images.githubusercontent.com/56236171/124266314-19f36d80-db37-11eb-9dba-1ff73f830aa9.png">
  represents source domain dataset, where <img width="120" alt="Ekran Resmi 2021-07-01 00 30 47" src="https://user-images.githubusercontent.com/56236171/124039644-a270f180-da03-11eb-9ff2-40930a537e5c.png"> is an RGB image and <img width="100" alt="Ekran Resmi 2021-07-01 00 32 41" src="https://user-images.githubusercontent.com/56236171/124039775-e237d900-da03-11eb-9761-3731839ab240.png"> is the corresponding ground truth semantic map. Similarly, <img width="90" alt="Ekran Resmi 2021-07-01 00 43 20" src="https://user-images.githubusercontent.com/56236171/124040543-62ab0980-da05-11eb-8dff-2b8fdbc2a2f4.png"> respresent target domain dataset, where <img width="120" alt="Ekran Resmi 2021-07-01 00 30 47" src="https://user-images.githubusercontent.com/56236171/124040986-4e1b4100-da06-11eb-88b0-9036b3c54118.png"> is an image and we do not have ground truth maps for this set. 
 
 ### Datasets
@@ -30,6 +30,7 @@ One of the state of the art methods in the field is CyCADA, which uses cycle con
 <div align="center">
   <img width="600" alt="Ekran Resmi 2021-07-02 03 29 58" src="https://user-images.githubusercontent.com/56236171/124207450-d886a200-dae5-11eb-8eb7-c6122ed869ec.png">
 </div> 
+
 ### Bidirectional Learning for Domain Adaptation of Semantic Segmentation
 BDL is the other state-of-the-art method which is related. In the method, there are two separated networks. The first one is image-to-image translation model and the second one is segmentation adaptation model. The networks are trained in both ways.  
 In forward direction, First network is trained with source and target data and translated images are obtained, which have the same semantic maps as the original source images. The second network will be trained with them in addition to target images and ground truth labels of source domain data. In backward direction, the motivation is to promote translation model using updated segmentation model. They aim to improve quality of translated images.

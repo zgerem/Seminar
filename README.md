@@ -29,13 +29,12 @@ One of the state of the art methods in the field is CyCADA, which uses cycle con
   <img width="600" alt="Ekran Resmi 2021-07-02 03 29 58" src="https://user-images.githubusercontent.com/56236171/124207450-d886a200-dae5-11eb-8eb7-c6122ed869ec.png">
 </div> 
 ### Bidirectional Learning for Domain Adaptation of Semantic Segmentation
-Bidirectionnel Learning for Domain Adaptation of Semantic Segmentation is the other methodsd that I want to mention. There are two separated networks. First one is image-to-image translation model and the second one is segmentation adaptation model. The networks are trained in both ways 
-	In forward direction, First network is trained with source and target data and translated images are obtained, which have the same semantic maps as the original source images. The second network will be trained with them in addition to target images and ground truth labels of source domain data.
-	In backward direction, the motivation is to promote translation model using updated segmentation model. They aim to improve quality of translated images.
+BDL is the other state-of-the-art method which is related. In the method, there are two separated networks. The first one is image-to-image translation model and the second one is segmentation adaptation model. The networks are trained in both ways.  
+In forward direction, First network is trained with source and target data and translated images are obtained, which have the same semantic maps as the original source images. The second network will be trained with them in addition to target images and ground truth labels of source domain data. In backward direction, the motivation is to promote translation model using updated segmentation model. They aim to improve quality of translated images.
  <div align="center">
   <img width="900" alt="Ekran Resmi 2021-06-04 12 14 07" src="https://user-images.githubusercontent.com/56236171/124207607-269ba580-dae6-11eb-8b74-747f213dc3e2.png">
+</div>
 
-</div> 
 ## Method and Main contributions
 In this section, I will explain the method proposed in the paper in detail and point its main contributions.
 ### Spectral Transfer

@@ -168,3 +168,6 @@ Quantitative evaluation of the method on GTA5 to CityScapes scenario is given in
 <div align="center">
 <img width="800" alt="Ekran Resmi 2021-06-12 17 20 06" src="https://user-images.githubusercontent.com/56236171/124203428-fe5b7900-dadc-11eb-9166-7b7c1bdf1c5a.png">
 </div>
+<div align="center">
+GTA5 -> CityScapes benchmark
+</div>

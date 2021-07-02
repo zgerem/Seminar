@@ -166,5 +166,5 @@ This situation is illustrated in paper with the given figure. When <img width="1
 Quantitative evaluation of the method on GTA5 to CityScapes scenario is given in the table. In the first section of the table, results of ResNet101 backbone is shown and we can see that entropy minimization activated FDA achieves a similar performance with ABStruct and AdvEnt. FDA with SST using MBT outperforms BDL by 4.0 %. Similarly, with VGG16 backbone, FDA outperforms all the other methods.
 
 <div align="center">
-<img width="968" alt="Ekran Resmi 2021-06-12 17 20 06" src="https://user-images.githubusercontent.com/56236171/124203428-fe5b7900-dadc-11eb-9166-7b7c1bdf1c5a.png">
+<img width="800" alt="Ekran Resmi 2021-06-12 17 20 06" src="https://user-images.githubusercontent.com/56236171/124203428-fe5b7900-dadc-11eb-9166-7b7c1bdf1c5a.png">
 </div>

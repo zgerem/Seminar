@@ -44,7 +44,8 @@ In backward direction, the motivation is to promote translation model using upda
 </div>
 <div align="center">
   Network architecture of BDL
-</div> 
+</div>   
+
 ## Method and Main contributions
 In this section, I will explain the method proposed in the paper in detail and point its main contributions.
 ### Spectral Transfer

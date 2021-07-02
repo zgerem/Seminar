@@ -26,21 +26,21 @@ As real-world dataset, CityScapes[3] is chosen. 2,975 images from this dataset i
 ### CyCADA: Cycle-Consistent Adversarial Domain Adaptation
 One of the state of the art methods in the field is CyCADA, which uses cycle consistent adversarial network to get translated images. They generate target stylized source images, then reconstruct source images from translated data and compute the loss to train the cycle in the figure. Also, they force the original and translated image to have the same semantics with semantic consistency loss. In addition to that, they employ image level and feature level loss functions to improve this alignment and they have a loss function for segmentation.
 <div align="center">
-  <img width="500" alt="Ekran Resmi 2021-07-02 03 29 58" src="https://user-images.githubusercontent.com/56236171/124207450-d886a200-dae5-11eb-8eb7-c6122ed869ec.png">
+  <img width="600" alt="Ekran Resmi 2021-07-02 03 29 58" src="https://user-images.githubusercontent.com/56236171/124207450-d886a200-dae5-11eb-8eb7-c6122ed869ec.png">
 </div> 
 ### Bidirectional Learning for Domain Adaptation of Semantic Segmentation
 Bidirectionnel Learning for Domain Adaptation of Semantic Segmentation is the other methodsd that I want to mention. There are two separated networks. First one is image-to-image translation model and the second one is segmentation adaptation model. The networks are trained in both ways 
 	In forward direction, First network is trained with source and target data and translated images are obtained, which have the same semantic maps as the original source images. The second network will be trained with them in addition to target images and ground truth labels of source domain data.
 	In backward direction, the motivation is to promote translation model using updated segmentation model. They aim to improve quality of translated images.
  <div align="center">
-  <img width="800" alt="Ekran Resmi 2021-06-04 12 14 07" src="https://user-images.githubusercontent.com/56236171/124207607-269ba580-dae6-11eb-8b74-747f213dc3e2.png">
+  <img width="900" alt="Ekran Resmi 2021-06-04 12 14 07" src="https://user-images.githubusercontent.com/56236171/124207607-269ba580-dae6-11eb-8b74-747f213dc3e2.png">
 
 </div> 
 ## Method and Main contributions
 In this section, I will explain the method proposed in the paper in detail and point its main contributions.
 ### Spectral Transfer
 In the paper, a spectral tansfer block is proposed. The reason behind implementation of the such a transfer is that variation of low-level spectrum does not affect high level semantics. However, neural networks learn these statistics together with useful features about semantics. To eliminate this, the structure in the figure follows a certain path.  
-<div align="center"> <img width="600" alt="Ekran Resmi 2021-07-01 10 26 43" src="https://user-images.githubusercontent.com/56236171/124092236-ec36f780-da56-11eb-8e7f-94f2be11402b.png"> </div>  
+<div align="center"> <img width="650" alt="Ekran Resmi 2021-07-01 10 26 43" src="https://user-images.githubusercontent.com/56236171/124092236-ec36f780-da56-11eb-8e7f-94f2be11402b.png"> </div>  
  <div align="center">
   Style transfer block proposed in paper
 </div>  

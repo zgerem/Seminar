@@ -10,7 +10,8 @@ Over the last decade, deep neural networks have achieved impressive success in v
 In unsupervised domain adaptation setting, we have labeled data from source domain and unlabeled data from target domain. Our aim is to adapt the model trained on source data to use it on target data with minimized performance drop. 
 
 ### UDA for Semantic Segmentation
-To train a network for semantic segmentation, we need plenty of data. High quality labeling takes 60 minutes for an image from CamVid dataset and 90 minutes for CityScapes. Hence, it is a demanding task to obtain this amount of data and label it. As a solution to this issue, synthetic data can be used to train the network and we can use this network for segmentation of real images. However, this will lead to performance drop and we need to perform domain adaptation to mitigate it. The paper proposes a new method for this task.
+To train a network for semantic segmentation, we need plenty of data. High quality labeling takes 60 minutes for an image from CamVid[1] dataset and 90 minutes for CityScapes[2]. Hence, it is a demanding task to obtain this amount of data and label it for real-world images. As a solution to this issue, segmentation network can be trained with synthetic data, where labeling an image takes around 7 seconds[3] and this network used for real-world images. However, this will lead to performance drop and we need to perform domain adaptation to mitigate it. The paper proposes a new method for this task.
+
 
 ### Notation
 In this section, I will introduce the notation defined in paper and use it thorughout this article.  
@@ -206,3 +207,6 @@ FDA paper proposes a new method for domain alignment which does not require any 
 In addition to that, they used SST effectively by employing MBT. Otherwise, SST would be self-referential and improvement would not be significant. With their simple method, they outperform all the other state-of-the-art methods. This study shows that some misalignments due to low-level statistics can be captured by Fourier transform.
 
 ## References
+[1] camvid
+[2] cityscapes
+[3] gta5

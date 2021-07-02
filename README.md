@@ -14,7 +14,7 @@ To train a network for semantic segmentation, we need plenty of data. High quali
 
 
 ### Notation
-In this section, I will introduce the notation defined in paper and use it thorughout this article.  
+In this section, I will introduce the notation defined in paper and use it throughout this article.  
 <img width="200" alt="Ekran Resmi 2021-07-02 13 08 50" src="https://user-images.githubusercontent.com/56236171/124266314-19f36d80-db37-11eb-9dba-1ff73f830aa9.png">
  represents source domain dataset, where <img width="120" alt="Ekran Resmi 2021-07-01 00 30 47" src="https://user-images.githubusercontent.com/56236171/124039644-a270f180-da03-11eb-9ff2-40930a537e5c.png"> is an RGB image and <img width="100" alt="Ekran Resmi 2021-07-01 00 32 41" src="https://user-images.githubusercontent.com/56236171/124039775-e237d900-da03-11eb-9761-3731839ab240.png"> is the corresponding ground truth semantic map. Similarly, <img width="90" alt="Ekran Resmi 2021-07-01 00 43 20" src="https://user-images.githubusercontent.com/56236171/124040543-62ab0980-da05-11eb-8dff-2b8fdbc2a2f4.png"> respresent target domain dataset, where <img width="120" alt="Ekran Resmi 2021-07-01 00 30 47" src="https://user-images.githubusercontent.com/56236171/124040986-4e1b4100-da06-11eb-88b0-9036b3c54118.png"> is an image and we do not have ground truth maps for this set. 
 
@@ -161,7 +161,7 @@ The next experiment is for Multi-band Transfer. When they use the predictions of
 <div align="center">
  Results for SST and MBT
 </div>
-Without SST, performing only MBT makes a bigger contribution than this. As in the table, the improvement becomes 3.9%. This observation lead the authors to perform MBT before SST.
+Without SST, performing only MBT makes a bigger contribution than this. As in the table, the improvement becomes 3.9%. This observation lead the authors to perform MBT to get pseudo labels for SST.
 
 #### Self-supervised Training (SST) with MBT
 The last experiment includes SST. Overall training process starts with training of 3 networks with different <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> values from scratch (Single scale FDA). Then, averaging over the predictions of these networks (MBT) gives the pseudo labels for SST. Using these labels, SST is performed one round.  

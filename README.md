@@ -209,7 +209,7 @@ FDA paper proposes a new method for domain alignment which does not require any 
 In addition to that, they used SST effectively by employing MBT. Otherwise, SST would be self-referential and improvement would not be significant. With their simple method, they outperform all the other state-of-the-art methods. This study shows that some misalignments due to low-level statistics can be captured by Fourier transform.
 
 ## References
-[1] camvid
-[2] cityscapes
-[3] gta5
-[4] SYNTHIA
+[1] Gabriel J Brostow, Julien Fauqueur, and Roberto Cipolla. Semantic object classes in video: A high-definition ground truth database. Pattern Recognition Letters, 2009.
+[2] Yuhua Chen, Wen Li, and Luc Van Gool. Road: Reality oriented adaptation for semantic segmentation of urban scenes. In ECCV, 2018.
+[3] Stephan R Richter, Vibhav Vineet, Stefan Roth, and Vladlen Koltun. Playing for data: Ground truth from computer games. In ECCV, 2016.
+[4] German Ros, Laura Sellart, Joanna Materzynska, David Vazquez, and Antonio M Lopez. The synthia dataset: A large collection of synthetic images for semantic segmentation of urban scenes. In CVPR, 2016

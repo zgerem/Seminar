@@ -40,6 +40,7 @@ In forward direction, the first network is trained with source and target data a
 In backward direction, the motivation is to promote translation model using updated segmentation model. They aim to improve quality of translated images.
  <div align="center">
   <img width="900" alt="Ekran Resmi 2021-06-04 12 14 07" src="https://user-images.githubusercontent.com/56236171/124207607-269ba580-dae6-11eb-8b74-747f213dc3e2.png">
+ Network architecture of BDL
 </div>
 
 ## Method and Main contributions

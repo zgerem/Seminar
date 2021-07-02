@@ -15,7 +15,7 @@ To train a network for semantic segmentation, we need plenty of data. High quali
 
 ### Notation
 In this section, I will introduce the notation defined in paper and use it thorughout this article.  
-<img width="120" alt="Ekran Resmi 2021-07-02 13 08 50" src="https://user-images.githubusercontent.com/56236171/124266314-19f36d80-db37-11eb-9dba-1ff73f830aa9.png">
+<img width="180" alt="Ekran Resmi 2021-07-02 13 08 50" src="https://user-images.githubusercontent.com/56236171/124266314-19f36d80-db37-11eb-9dba-1ff73f830aa9.png">
  represents source domain dataset, where <img width="120" alt="Ekran Resmi 2021-07-01 00 30 47" src="https://user-images.githubusercontent.com/56236171/124039644-a270f180-da03-11eb-9ff2-40930a537e5c.png"> is an RGB image and <img width="100" alt="Ekran Resmi 2021-07-01 00 32 41" src="https://user-images.githubusercontent.com/56236171/124039775-e237d900-da03-11eb-9761-3731839ab240.png"> is the corresponding ground truth semantic map. Similarly, <img width="90" alt="Ekran Resmi 2021-07-01 00 43 20" src="https://user-images.githubusercontent.com/56236171/124040543-62ab0980-da05-11eb-8dff-2b8fdbc2a2f4.png"> respresent target domain dataset, where <img width="120" alt="Ekran Resmi 2021-07-01 00 30 47" src="https://user-images.githubusercontent.com/56236171/124040986-4e1b4100-da06-11eb-88b0-9036b3c54118.png"> is an image and we do not have ground truth maps for this set. 
 
 ### Datasets

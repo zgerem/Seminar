@@ -161,3 +161,5 @@ One observation from this table is that MBT is the best performer in all the rou
 
 
 This situation is illustrated in paper with the given figure. When <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> is small, adapted source data has less chance to cover target dataset than the one with larger beta. When pseudo labels are used, adapted source center is closer to target center and variance is smaller. Hence, they conclude that for single scale FDA, it is better to use a larger <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> and for MBT, it is better to gradually increase the weight of the network with smaller <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png">.
+
+#### GTA5 -> CityScapes Benchmark

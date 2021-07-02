@@ -49,7 +49,7 @@ In backward direction, the motivation is to promote translation model using upda
 ## Method and Main contributions
 In this section, I will explain the method proposed in the paper in detail and point out its main contributions.
 ### Spectral Transfer
-In the paper, a spectral transfer block is proposed. The reason behind implementation of such a transfer is that variation of low-level spectrum does not affect high level semantics. However, neural networks learn these statistics together with useful features about semantics. To eliminate this, the structure in the figure follows a certain path.  
+In the paper, a spectral transfer block is proposed. The reason behind implementation of such a transfer is that the variation of low-level spectrum does not affect high level semantics. However, neural networks learn these statistics together with useful features about semantics. To eliminate this, the structure in the figure follows a certain path.  
 <div align="center"> <img width="650" alt="Ekran Resmi 2021-07-01 10 26 43" src="https://user-images.githubusercontent.com/56236171/124092236-ec36f780-da56-11eb-8e7f-94f2be11402b.png"> </div>  
  <div align="center">
   Style transfer block proposed in paper

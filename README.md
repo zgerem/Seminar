@@ -184,5 +184,5 @@ SYNTHIA -> CityScapes benchmark
 #### Qualitative Results
 In the paper the authors compare their results with BDL which is the second best performer and uses the same backbone for segmentation. In the first column, there are images from cityscapes dataset and their corresponding ground truth labels. Next to them, we have predictions of BDL method and in the right we have FDA predictions. We can see that predictions of FDA are less noisy and also maintain the structures like poles as can be seen in the last image. In addition, The method performs well on minority classes such as truck and bicycle. 
 <div align="center">
-<img width="868" alt="Ekran Resmi 2021-07-02 02 59 30" src="https://user-images.githubusercontent.com/56236171/124205457-8cd1f980-dae1-11eb-80e7-d7c946d89b84.png">
+<img width="750" alt="Ekran Resmi 2021-07-02 02 59 30" src="https://user-images.githubusercontent.com/56236171/124205457-8cd1f980-dae1-11eb-80e7-d7c946d89b84.png">
 </div>

@@ -59,7 +59,7 @@ The first thing it does is taking Fourier transform of randomly sampled target i
 <div align="center">
   <img width="400" alt="Ekran Resmi 2021-07-01 10 19 31" src="https://user-images.githubusercontent.com/56236171/124091231-e2f95b00-da55-11eb-9dec-8a14f050de6a.png">
 </div> 
-This transform has an amplitude and a phase part. After taking the transform, it replaces low frequency part of the amplitude of the source image with the same part of the amplitude of target image. For this process, the following mask should be used:  
+This transform has an amplitude and a phase part. After taking the transform, it replaces low frequency part of the amplitude of the source image with that part of target image. For this process, the following mask should be used:  
 <div align="center">
   <img width="300" alt="Ekran Resmi 2021-07-01 11 11 38" src="https://user-images.githubusercontent.com/56236171/124098779-2905ed00-da5d-11eb-83ae-7c95aeae6563.png">
 </div> 

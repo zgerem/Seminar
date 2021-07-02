@@ -112,9 +112,9 @@ After scaling this loss function and summing it with cross entropy loss, they tr
   <img width="400" alt="Ekran Resmi 2021-06-01 20 40 51" src="https://user-images.githubusercontent.com/56236171/124141066-5bc5da80-da89-11eb-92e7-a2caf343a532.png">
 </div>
 
-### Self Supervised Training
-To boost the performance of the method, they also do self-supervised learning and they need pseudo labels for this task. Using the predictions of a model in the next training with self supervised training, it will become self-referential and the improvement will not be significant.
-They obtain these pseudo labels from the models trained with different <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> values. They pass target images through these models and take the mean prediction as in the equation and behave these labels as ground truth. 
+### Self Supervised Training (SST)
+To boost the performance of the method, they also do self-supervised learning and they need pseudo labels for this task. Using predictions of a model as pseudo labels in the next training with SST is self-referential and results in insignificant contribution.  
+As a solution, they obtain pseudo labels from the models trained with different <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> values. They pass target images through these models and take the mean prediction as in the equation and behave these labels as ground truth. 
 <div align="center">
   <img width="200" alt="Ekran Resmi 2021-06-11 13 44 14" src="https://user-images.githubusercontent.com/56236171/124173392-4497e480-daab-11eb-809b-af2af38e230c.png">
 </div>
@@ -163,7 +163,7 @@ The next experiment is for Multi-band Transfer. When they use the predictions of
 </div>
 Without SST, performing only MBT makes a bigger contribution than this. As in the table, the improvement becomes 3.9%. This observation lead the authors to perform MBT before SST.
 
-#### Self-supervised Training with MBT
+#### Self-supervised Training (SST) with MBT
 The last experiment includes SST. Overall training process starts with training of 3 networks with different <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> values from scratch (Single scale FDA). Then, averaging over the predictions of these networks (MBT) gives the pseudo labels for SST. Using these labels, SST is performed one round.  
 In the end of second round, they perform MBT again to get pseudo labels for the next round. In the last round, these labels are used in the networks and the last result is obtained with MBT. Following table includes the results for overall training process.
 <div align="center">

@@ -23,7 +23,13 @@ As real-world dataset, CityScapes[3] is chosen. 2,975 images from this dataset i
 
 
 ## Related Work
+### CyCADA: Cycle-Consistent Adversarial Domain Adaptation
+One of the state of the art methods in the field is CyCADA, which uses cycle consistent adversarial network to get translated images. They generate target stylized source images, then reconstruct source images from translated data and compute the loss to train the cycle in the figure. Also, they force the original and translated image to have the same semantics with semantic consistency loss. In addition to that, they employ image level and feature level loss functions to improve this alignment and they have a loss function for segmentation.
+<div align="center">
+  <img width="500" alt="Ekran Resmi 2021-07-02 03 29 58" src="https://user-images.githubusercontent.com/56236171/124207450-d886a200-dae5-11eb-8eb7-c6122ed869ec.png">
 
+</div> 
+### Bidirectional Learning for Domain Adaptation of Semantic Segmentation
 ## Method and Main contributions
 In this section, I will explain the method proposed in the paper in detail and point its main contributions.
 ### Spectral Transfer
@@ -192,3 +198,4 @@ Comparison of predictions
 
 ## Conclusion
 
+## References

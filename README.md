@@ -20,7 +20,7 @@ In this section, I will introduce the notation defined in the paper and use it t
 
 ### Datasets
 In the paper, two different synthetic datasets are used as source domain data in two scenarios. GTA5[3] has 24,966 annotated images with spatial resolution 1914×1052 originally, which are resized to 1280×720 and randomly cropped to 1024×512 in training process. The second synthetic dataset is SYNTHIA[4], its SYNTHIA-RAND-CITYSCAPES subset is used in the paper which consists of 9,400 annotated images with size 1280×760. The images are randomly cropped to 1024×512 for training. 
-As real-world dataset, CityScapes[2] is chosen. 2,975 images from this dataset is used as target domain data and 500 validation images are used for testing. These images are resized to 1024×512. 
+As real-world dataset, CityScapes[2] is chosen. 2,975 images from this dataset are used as target domain data and 500 validation images are used for testing. These images are resized to 1024×512. 
 
 
 

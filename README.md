@@ -134,9 +134,9 @@ The whole training process of segmentation network consists of initial training 
 
 In the paper, the authors work on two different domain adaptation scenarios.
 - GTA5 to CityScapes: These two datasets have 19 classes in common.
-- SYNTHIA to CityScapes: For this scenario, evaluations are done over both 13 and 16 classes.
+- SYNTHIA to CityScapes: For this scenario, the method is evaluated over 13 and 16 classes.
 
-To show the robustness of the method, they trained two segmentation networks <img width="20" alt="Ekran Resmi 2021-07-01 16 30 48" src="https://user-images.githubusercontent.com/56236171/124141559-cbd46080-da89-11eb-8b69-093971dbef2a.png"> separately. The first one is DeepLabv2 with ResNet101 backbone and other one is FCN-8s with VGG16  backbone. Both of these networks are initialized with pertained weights on ImageNet dataset.
+To show robustness of the method, they trained two segmentation networks <img width="20" alt="Ekran Resmi 2021-07-01 16 30 48" src="https://user-images.githubusercontent.com/56236171/124141559-cbd46080-da89-11eb-8b69-093971dbef2a.png"> separately. The first one is DeepLabv2 with ResNet101 backbone and other one is FCN-8s with VGG16  backbone. Both of these networks are initialized with pretrained weights on ImageNet dataset.
 
 ### Results
 #### FDA with Single Scale

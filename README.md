@@ -152,4 +152,9 @@ In the end of second round, they perform MBT again to get pseudo labels for the 
 Results of overall process
 </div>
 
-One observation from this table is that MBT is the best performer in all the rounds. In addition, performing SST with pseudo labels given by MBT improves performance in each round. Another observation is that network with <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png">=0.09 is the best performer in the first round while it is the worst in the last.
+One observation from this table is that MBT is the best performer in all the rounds. In addition, performing SST with pseudo labels given by MBT improves performance in each round. Another observation is that network with <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png">=0.09 is the best performer in the first round while it is the worst in the last and the one with <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png">=0.01 becomes the best.  
+This situation is illustrated in paper with the given figure.
+<div align="center">
+<img width="703" alt="Ekran Resmi 2021-06-12 17 15 50" src="https://user-images.githubusercontent.com/56236171/124202880-b4be5e80-dadb-11eb-8283-8d1ff5bdd862.png">
+
+</div>

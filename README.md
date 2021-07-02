@@ -172,11 +172,17 @@ Quantitative evaluation of the method on GTA5 to CityScapes scenario is given in
 GTA5 -> CityScapes benchmark
 </div>
 
-Following table shows quantitative evaluation on the second scenario, SYNTHIA to CityScapes. This time, FDA is evaluated for 13 classes for ResNet101 and 16 classes for VGG16. For this scenario FDA outperforms the other methods as in the other scenario.
+Following table shows quantitative evaluation on the second scenario, SYNTHIA to CityScapes. This time, FDA is evaluated for 13 classes for ResNet101 and 16 classes for VGG16. For this scenario FDA outperforms the other methods as in GTA5 to CityScapes.
 <div align="center">
 <img width="770" alt="Ekran Resmi 2021-07-02 02 50 41" src="https://user-images.githubusercontent.com/56236171/124204910-58117280-dae0-11eb-9bd9-cb403173dab7.png">
 
 </div>
 <div align="center">
 SYNTHIA -> CityScapes benchmark
+</div>
+
+#### Qualitative Results
+In the paper the authors compare their results with BDL which is the second best performer and uses the same backbone for segmentation. In the first column, there are images from cityscapes dataset and their corresponding ground truth labels. Next to them, we have predictions of BDL method and in the right we have FDA predictions. We can see that predictions of FDA are less noisy and also maintain the structures like poles as can be seen in the last image. In addition, The method performs well on minority classes such as truck and bicycle. 
+<div align="center">
+<img width="868" alt="Ekran Resmi 2021-07-02 02 59 30" src="https://user-images.githubusercontent.com/56236171/124205457-8cd1f980-dae1-11eb-80e7-d7c946d89b84.png">
 </div>

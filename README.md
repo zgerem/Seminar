@@ -49,7 +49,7 @@ In backward direction, the motivation is to promote translation model using upda
 ## Method and Main contributions
 In this section, I will explain the method proposed in the paper in detail and point its main contributions.
 ### Spectral Transfer
-In the paper, a spectral tansfer block is proposed. The reason behind implementation of such a transfer is that variation of low-level spectrum does not affect high level semantics. However, neural networks learn these statistics together with useful features about semantics. To eliminate this, the structure in the figure follows a certain path.  
+In the paper, a spectral transfer block is proposed. The reason behind implementation of such a transfer is that variation of low-level spectrum does not affect high level semantics. However, neural networks learn these statistics together with useful features about semantics. To eliminate this, the structure in the figure follows a certain path.  
 <div align="center"> <img width="650" alt="Ekran Resmi 2021-07-01 10 26 43" src="https://user-images.githubusercontent.com/56236171/124092236-ec36f780-da56-11eb-8e7f-94f2be11402b.png"> </div>  
  <div align="center">
   Style transfer block proposed in paper
@@ -68,7 +68,7 @@ This transform has an amplitude and a phase part. After taking the transform, it
 
 
 In the mask, <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> defines the area to be replaced. This is the only parameter used in transfer part and it takes values between 0 and 1. The center of image is accepted as (0, 0) and H refers to height while W refers to width. This definition of mask makes choice of <img width="14" alt="Ekran Resmi 2021-07-01 20 19 24" src="https://user-images.githubusercontent.com/56236171/124172103-b4a56b00-daa9-11eb-9acf-fd5ab62f443d.png"> independent of the size of the image. In the end, taking inverse Fourier Transform gives the source image transferred to target domain <img width="45" alt="Ekran Resmi 2021-07-01 12 09 46" src="https://user-images.githubusercontent.com/56236171/124107164-40e16f00-da65-11eb-9b15-97de2500c23c.png">. Overall process with randomly sampled source image <img width="65" alt="Ekran Resmi 2021-07-01 11 39 45" src="https://user-images.githubusercontent.com/56236171/124106151-3c688680-da64-11eb-9301-900b46436d42.png">
- and target image <img width="60" alt="Ekran Resmi 2021-07-01 11 40 01" src="https://user-images.githubusercontent.com/56236171/124106018-1e9b2180-da64-11eb-81b7-c4aae7f5c58f.png"> can be expressed with the followig formula:  
+ and target image <img width="60" alt="Ekran Resmi 2021-07-01 11 40 01" src="https://user-images.githubusercontent.com/56236171/124106018-1e9b2180-da64-11eb-81b7-c4aae7f5c58f.png"> can be expressed with the following formula:  
 <div align="center">
   <img width="420" alt="Ekran Resmi 2021-07-01 11 54 43" src="https://user-images.githubusercontent.com/56236171/124106592-a123e100-da64-11eb-9d94-a8c307aa6bd6.png">
 </div>  
